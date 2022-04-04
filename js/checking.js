@@ -8,12 +8,12 @@ $(document).ready(function(){
                      if (MD5(input.value)==hash.acthash) {
                        localStorage.removeItem('pass');
                        localStorage.setItem('pass', JSON.stringify(hash.acthash));
-                       window.open('/search')
+                       window.open('/search');
                      } else {
                        alert('📵 Ввели НЕправильный Пароль‼️ \n Пароль не должен содержать пробелов‼️');
                        localStorage.removeItem('pass');
                        localStorage.setItem('pass', JSON.stringify("donat"));
-                       location.href='/password';
+                       location.href('/password');
                      }
                    }
                  });
