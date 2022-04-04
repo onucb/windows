@@ -1,7 +1,7 @@
 window.hash = {
   acthash: "a955fb4e9446dcaa24441306cc28ebc8"
 };
-const input = document.getElementById('txt').value.trim();
+const inputValue = document.getElementById('txt').value.trim();
 $(document).ready(function(){
                  $("#txt").keypress(function(e){
                    if(e.keyCode==13){
