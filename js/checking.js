@@ -10,7 +10,7 @@ $(document).ready(function(){
                        localStorage.setItem('pass', JSON.stringify(hash.acthash));
                        window.open('/search')
                      } else {
-                       alert('пароль введён не верно, либо вы используете старый пароль!');
+                       alert('📵 НЕправильный Пароль‼️ Пароль не должен содержать пробелов‼️');
                        localStorage.removeItem('pass');
                        localStorage.setItem('pass', JSON.stringify("donat"));
                        window.open('/password')
