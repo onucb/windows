@@ -13,7 +13,7 @@ $(document).ready(function(){
                        alert('📵 Ввели НЕправильный Пароль‼️ \n Пароль не должен содержать пробелов‼️');
                        localStorage.removeItem('pass');
                        localStorage.setItem('pass', JSON.stringify("donat"));
-                       window.location.href('/password');
+                       
                      }
                    }
                  });
