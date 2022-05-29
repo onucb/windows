@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Check premium statuses</title>
+</head>		
+<body>
+<script>
+localStorage.removeItem('check');
+localStorage.setItem('check', JSON.stringify("f064df9af70e9fcbdae899bc4b626924"));
+var check = localStorage.getItem("check");
+console.log(check);
+var localValue = localStorage.getItem("pass");
+console.log(localValue);
+if (localValue == check) {
+  url = '/kino/subscribe' + window.location.search;
+  window.location.href = url;
+} else {
+  alert("Ваша подписка истекла, оплатите для продолжения просмотра с полным функционалом, на данный момент вы перенаправлены на бесплатный сильно урезанный доступ");
+  url = '/kino/subscription' + window.location.search;
+  window.location.href = url;
+}
+</script>
+</body>
+</html> 
